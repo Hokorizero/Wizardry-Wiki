@@ -16,11 +16,11 @@
 
 ## 准备  
 
-- 了解一些关于 _Minecraft Forge_ 的基础知识：有一定的 Java 基础，并且了解如何添加方块、物品，熟悉Java中的registries机制和事件处理系统。尽管如此，我还是会尽可能将这一部分解释清楚。      
+- 在这一切的开始,你必须了有一定的 Java 基础,有一定的的Minecraft Forge mod的基础知识：例如如何在模组中添加方块、物品，熟悉Java中的registries机制和entry处理的机制。尽管如此，我还是会尽可能将这一部分解释清楚。      
 
 - 配置 mod 环境。我用了好几年的 eclipse ，最近换成了 IntelliJ IDEA，你也可以用其他 IDE ——我将提到的东西并不是这两个IDE的特性。请确保你使用的是适用于Wizardry的 Minecraft Forge 版本，通常应该使用对应当前 Minecraft 版本的最新 Forge 版本。    
 
-- 一些关于添加法术的准备（mod 主类和 proxies ，还有 lang 文件）。    
+- 一些关于添加法术的准备（如添加 mod 主类和 proxies ，还有 lang 文件）。    
 
 ## 配置工作环境  
 
@@ -42,7 +42,7 @@
 
 > 如果你知道怎么使用 Gradle 和 Maven （不像我），你可以用 CurseForge Maven 来替代本地的jar文件 。你可以在 [curse知识库](https://authors.curseforge.com/knowledge-base/projects/529-api) 里面看到更多详细信息。
 
-## 指定Wizardry Mod为支持库
+## 指定Wizardry Mod为依赖库
 
 接下来，你需要将 Wizardry 设置为你的 mod 的前置，请使用以下的语法在 `@Mod`的 annotation 中写入内容：  
 
